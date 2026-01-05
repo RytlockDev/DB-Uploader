@@ -1,6 +1,6 @@
 ﻿namespace DB_Uploader
 {
-    partial class Form1
+    partial class Hauptfenster
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,8 +30,8 @@
         {
             components = new System.ComponentModel.Container();
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            ClientSize = new Size(900, 550);
+            Text = "DB Uploader";
         }
 
         #endregion
