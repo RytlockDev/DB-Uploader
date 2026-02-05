@@ -1,8 +1,8 @@
 namespace DB_Uploader
 {
-    public partial class Hauptfenster : Form
+    public partial class MainWindow : Form
     {
-        public Hauptfenster()
+        public MainWindow()
         {
             InitializeComponent();
         }
