@@ -38,6 +38,8 @@
             anmeldedatenLadenToolStripMenuItem = new ToolStripMenuItem();
             anmeldedatenLoschenToolStripMenuItem = new ToolStripMenuItem();
             panel1 = new Panel();
+            button2 = new Button();
+            button1 = new Button();
             textBox4 = new TextBox();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
@@ -50,8 +52,6 @@
             tabPage1 = new TabPage();
             tabPage2 = new TabPage();
             label5 = new Label();
-            button1 = new Button();
-            button2 = new Button();
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
@@ -135,6 +135,24 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(876, 60);
             panel1.TabIndex = 1;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(724, 29);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 8;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(643, 29);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 4;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // textBox4
             // 
@@ -225,7 +243,7 @@
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(192, 72);
+            tabPage2.Size = new Size(868, 357);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
@@ -238,24 +256,6 @@
             label5.Size = new Size(38, 15);
             label5.TabIndex = 3;
             label5.Text = "label5";
-            // 
-            // button1
-            // 
-            button1.Location = new Point(643, 29);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 4;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(724, 29);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 8;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
