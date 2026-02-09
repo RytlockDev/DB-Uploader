@@ -23,319 +23,338 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            dateiToolStripMenuItem = new ToolStripMenuItem();
-            dateiToolStripMenuItem1 = new ToolStripMenuItem();
-            dateiSpeichernToolStripMenuItem = new ToolStripMenuItem();
-            dateiSchliesenToolStripMenuItem = new ToolStripMenuItem();
-            anmeldedatenToolStripMenuItem = new ToolStripMenuItem();
-            anmeldedatenSpeichernToolStripMenuItem = new ToolStripMenuItem();
-            anmeldedatenLadenToolStripMenuItem = new ToolStripMenuItem();
-            anmeldedatenLoschenToolStripMenuItem = new ToolStripMenuItem();
-            panel1 = new Panel();
-            button2 = new Button();
-            button1 = new Button();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            tabControl1 = new TabControl();
-            tabPage1 = new TabPage();
-            tabPage2 = new TabPage();
-            label5 = new Label();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            menuStrip1.SuspendLayout();
+            panel1 = new System.Windows.Forms.Panel();
+            btnClrFields = new System.Windows.Forms.Button();
+            btnDBConnect = new System.Windows.Forms.Button();
+            TBIp = new System.Windows.Forms.TextBox();
+            TBDBName = new System.Windows.Forms.TextBox();
+            TBPassword = new System.Windows.Forms.TextBox();
+            TBUsername = new System.Windows.Forms.TextBox();
+            label4 = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            label2 = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            TCDB = new System.Windows.Forms.TabControl();
+            TabTables = new System.Windows.Forms.TabPage();
+            TabTableContent = new System.Windows.Forms.TabPage();
+            TabLoadedDS = new System.Windows.Forms.TabPage();
+            meldungen = new System.Windows.Forms.Label();
+            btnDSSave = new System.Windows.Forms.Button();
+            btnDSRemove = new System.Windows.Forms.Button();
+            btnExit = new System.Windows.Forms.Button();
+            dateiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            dateiToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            dateiSpeichernToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            dateiSchliesenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            anmeldedatenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            anmeldedatenSpeichernToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            anmeldedatenLadenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            anmeldedatenLoschenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            menuStrip1 = new System.Windows.Forms.MenuStrip();
             panel1.SuspendLayout();
-            tabControl1.SuspendLayout();
+            TCDB.SuspendLayout();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { dateiToolStripMenuItem, anmeldedatenToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(900, 24);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
-            // 
-            // dateiToolStripMenuItem
-            // 
-            dateiToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { dateiToolStripMenuItem1, dateiSpeichernToolStripMenuItem, dateiSchliesenToolStripMenuItem });
-            dateiToolStripMenuItem.Name = "dateiToolStripMenuItem";
-            dateiToolStripMenuItem.Size = new Size(46, 20);
-            dateiToolStripMenuItem.Text = "Datei";
-            // 
-            // dateiToolStripMenuItem1
-            // 
-            dateiToolStripMenuItem1.Name = "dateiToolStripMenuItem1";
-            dateiToolStripMenuItem1.Size = new Size(156, 22);
-            dateiToolStripMenuItem1.Text = "Datei Öffnen";
-            // 
-            // dateiSpeichernToolStripMenuItem
-            // 
-            dateiSpeichernToolStripMenuItem.Name = "dateiSpeichernToolStripMenuItem";
-            dateiSpeichernToolStripMenuItem.Size = new Size(156, 22);
-            dateiSpeichernToolStripMenuItem.Text = "Datei Speichern";
-            // 
-            // dateiSchliesenToolStripMenuItem
-            // 
-            dateiSchliesenToolStripMenuItem.Name = "dateiSchliesenToolStripMenuItem";
-            dateiSchliesenToolStripMenuItem.Size = new Size(156, 22);
-            dateiSchliesenToolStripMenuItem.Text = "Datei Schliesen";
-            // 
-            // anmeldedatenToolStripMenuItem
-            // 
-            anmeldedatenToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { anmeldedatenSpeichernToolStripMenuItem, anmeldedatenLadenToolStripMenuItem, anmeldedatenLoschenToolStripMenuItem });
-            anmeldedatenToolStripMenuItem.Name = "anmeldedatenToolStripMenuItem";
-            anmeldedatenToolStripMenuItem.Size = new Size(97, 20);
-            anmeldedatenToolStripMenuItem.Text = "Anmeldedaten";
-            // 
-            // anmeldedatenSpeichernToolStripMenuItem
-            // 
-            anmeldedatenSpeichernToolStripMenuItem.Name = "anmeldedatenSpeichernToolStripMenuItem";
-            anmeldedatenSpeichernToolStripMenuItem.Size = new Size(207, 22);
-            anmeldedatenSpeichernToolStripMenuItem.Text = "Anmeldedaten Speichern";
-            // 
-            // anmeldedatenLadenToolStripMenuItem
-            // 
-            anmeldedatenLadenToolStripMenuItem.Name = "anmeldedatenLadenToolStripMenuItem";
-            anmeldedatenLadenToolStripMenuItem.Size = new Size(207, 22);
-            anmeldedatenLadenToolStripMenuItem.Text = "Anmeldedaten Laden";
-            // 
-            // anmeldedatenLoschenToolStripMenuItem
-            // 
-            anmeldedatenLoschenToolStripMenuItem.Name = "anmeldedatenLoschenToolStripMenuItem";
-            anmeldedatenLoschenToolStripMenuItem.Size = new Size(207, 22);
-            anmeldedatenLoschenToolStripMenuItem.Text = "Anmeldedaten Löschen";
             // 
             // panel1
             // 
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(btnClrFields);
+            panel1.Controls.Add(btnDBConnect);
+            panel1.Controls.Add(TBIp);
+            panel1.Controls.Add(TBDBName);
+            panel1.Controls.Add(TBPassword);
+            panel1.Controls.Add(TBUsername);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(12, 27);
+            panel1.Location = new System.Drawing.Point(12, 27);
             panel1.Name = "panel1";
-            panel1.Size = new Size(876, 60);
+            panel1.Size = new System.Drawing.Size(876, 60);
             panel1.TabIndex = 1;
             // 
-            // button2
+            // btnClrFields
             // 
-            button2.Location = new Point(724, 29);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 8;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btnClrFields.Location = new System.Drawing.Point(742, 28);
+            btnClrFields.Name = "btnClrFields";
+            btnClrFields.Size = new System.Drawing.Size(93, 23);
+            btnClrFields.TabIndex = 8;
+            btnClrFields.Text = "Ferlder Leeren";
+            btnClrFields.UseVisualStyleBackColor = true;
+            btnClrFields.Click += btnClrFields_Click;
             // 
-            // button1
+            // btnDBConnect
             // 
-            button1.Location = new Point(643, 29);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 4;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btnDBConnect.Location = new System.Drawing.Point(643, 29);
+            btnDBConnect.Name = "btnDBConnect";
+            btnDBConnect.Size = new System.Drawing.Size(93, 23);
+            btnDBConnect.TabIndex = 4;
+            btnDBConnect.Text = "Verbinden";
+            btnDBConnect.UseVisualStyleBackColor = true;
+            btnDBConnect.Click += btnDBConnect_Click;
             // 
-            // textBox4
+            // TBIp
             // 
-            textBox4.Location = new Point(323, 29);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(154, 23);
-            textBox4.TabIndex = 7;
+            TBIp.Location = new System.Drawing.Point(323, 29);
+            TBIp.Name = "TBIp";
+            TBIp.Size = new System.Drawing.Size(154, 23);
+            TBIp.TabIndex = 7;
             // 
-            // textBox3
+            // TBDBName
             // 
-            textBox3.Location = new Point(483, 29);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(154, 23);
-            textBox3.TabIndex = 6;
+            TBDBName.Location = new System.Drawing.Point(483, 29);
+            TBDBName.Name = "TBDBName";
+            TBDBName.Size = new System.Drawing.Size(154, 23);
+            TBDBName.TabIndex = 6;
             // 
-            // textBox2
+            // TBPassword
             // 
-            textBox2.Location = new Point(163, 29);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(154, 23);
-            textBox2.TabIndex = 5;
+            TBPassword.Location = new System.Drawing.Point(163, 29);
+            TBPassword.Name = "TBPassword";
+            TBPassword.Size = new System.Drawing.Size(154, 23);
+            TBPassword.TabIndex = 5;
             // 
-            // textBox1
+            // TBUsername
             // 
-            textBox1.Location = new Point(3, 29);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(154, 23);
-            textBox1.TabIndex = 4;
+            TBUsername.Location = new System.Drawing.Point(3, 29);
+            TBUsername.Name = "TBUsername";
+            TBUsername.Size = new System.Drawing.Size(154, 23);
+            TBUsername.TabIndex = 4;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(483, 11);
+            label4.Location = new System.Drawing.Point(483, 11);
             label4.Name = "label4";
-            label4.Size = new Size(67, 15);
+            label4.Size = new System.Drawing.Size(62, 15);
             label4.TabIndex = 3;
-            label4.Text = "Server Port:";
+            label4.Text = "DB-Name:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(323, 11);
+            label3.Location = new System.Drawing.Point(323, 11);
             label3.Name = "label3";
-            label3.Size = new Size(55, 15);
+            label3.Size = new System.Drawing.Size(86, 15);
             label3.TabIndex = 2;
-            label3.Text = "Server IP:";
+            label3.Text = "Server Adresse:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(163, 11);
+            label2.Location = new System.Drawing.Point(163, 11);
             label2.Name = "label2";
-            label2.Size = new Size(88, 15);
+            label2.Size = new System.Drawing.Size(88, 15);
             label2.TabIndex = 1;
             label2.Text = "User-Password:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(3, 11);
+            label1.Location = new System.Drawing.Point(3, 11);
             label1.Name = "label1";
-            label1.Size = new Size(63, 15);
+            label1.Size = new System.Drawing.Size(63, 15);
             label1.TabIndex = 0;
             label1.Text = "Username:";
             // 
-            // tabControl1
+            // TCDB
             // 
-            tabControl1.Controls.Add(tabPage1);
-            tabControl1.Controls.Add(tabPage2);
-            tabControl1.Location = new Point(12, 93);
-            tabControl1.Name = "tabControl1";
-            tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(876, 385);
-            tabControl1.TabIndex = 2;
+            TCDB.Controls.Add(TabTables);
+            TCDB.Controls.Add(TabTableContent);
+            TCDB.Controls.Add(TabLoadedDS);
+            TCDB.Location = new System.Drawing.Point(12, 93);
+            TCDB.Name = "TCDB";
+            TCDB.SelectedIndex = 0;
+            TCDB.Size = new System.Drawing.Size(876, 385);
+            TCDB.TabIndex = 2;
             // 
-            // tabPage1
+            // TabTables
             // 
-            tabPage1.Location = new Point(4, 24);
-            tabPage1.Name = "tabPage1";
-            tabPage1.Padding = new Padding(3);
-            tabPage1.Size = new Size(868, 357);
-            tabPage1.TabIndex = 0;
-            tabPage1.Text = "tabPage1";
-            tabPage1.UseVisualStyleBackColor = true;
+            TabTables.Location = new System.Drawing.Point(4, 24);
+            TabTables.Name = "TabTables";
+            TabTables.Padding = new System.Windows.Forms.Padding(3);
+            TabTables.Size = new System.Drawing.Size(868, 357);
+            TabTables.TabIndex = 0;
+            TabTables.Text = "Tabellen";
+            TabTables.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // TabTableContent
             // 
-            tabPage2.Location = new Point(4, 24);
-            tabPage2.Name = "tabPage2";
-            tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(868, 357);
-            tabPage2.TabIndex = 1;
-            tabPage2.Text = "tabPage2";
-            tabPage2.UseVisualStyleBackColor = true;
+            TabTableContent.Location = new System.Drawing.Point(4, 24);
+            TabTableContent.Name = "TabTableContent";
+            TabTableContent.Padding = new System.Windows.Forms.Padding(3);
+            TabTableContent.Size = new System.Drawing.Size(868, 357);
+            TabTableContent.TabIndex = 1;
+            TabTableContent.Text = "Tabelleninhalt";
+            TabTableContent.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // TabLoadedDS
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(416, 526);
-            label5.Name = "label5";
-            label5.Size = new Size(38, 15);
-            label5.TabIndex = 3;
-            label5.Text = "label5";
+            TabLoadedDS.Location = new System.Drawing.Point(4, 24);
+            TabLoadedDS.Name = "TabLoadedDS";
+            TabLoadedDS.Padding = new System.Windows.Forms.Padding(3);
+            TabLoadedDS.Size = new System.Drawing.Size(868, 357);
+            TabLoadedDS.TabIndex = 2;
+            TabLoadedDS.Text = "Geladene DS";
+            TabLoadedDS.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // meldungen
             // 
-            button3.Location = new Point(655, 495);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 9;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            meldungen.AutoSize = true;
+            meldungen.Location = new System.Drawing.Point(416, 526);
+            meldungen.Name = "meldungen";
+            meldungen.Size = new System.Drawing.Size(0, 15);
+            meldungen.TabIndex = 3;
             // 
-            // button4
+            // btnDSSave
             // 
-            button4.Location = new Point(736, 495);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 10;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            btnDSSave.Location = new System.Drawing.Point(556, 484);
+            btnDSSave.Name = "btnDSSave";
+            btnDSSave.Size = new System.Drawing.Size(93, 23);
+            btnDSSave.TabIndex = 9;
+            btnDSSave.Text = "DS Speichern";
+            btnDSSave.UseVisualStyleBackColor = true;
+            btnDSSave.Click += btnDSSave_Click;
             // 
-            // button5
+            // btnDSRemove
             // 
-            button5.Location = new Point(817, 495);
-            button5.Name = "button5";
-            button5.Size = new Size(75, 23);
-            button5.TabIndex = 11;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
+            btnDSRemove.Location = new System.Drawing.Point(655, 484);
+            btnDSRemove.Name = "btnDSRemove";
+            btnDSRemove.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            btnDSRemove.Size = new System.Drawing.Size(93, 23);
+            btnDSRemove.TabIndex = 10;
+            btnDSRemove.Text = "DS Abwahlen";
+            btnDSRemove.UseVisualStyleBackColor = true;
+            btnDSRemove.Click += btnDSRemove_Click;
+            // 
+            // btnExit
+            // 
+            btnExit.Location = new System.Drawing.Point(754, 484);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new System.Drawing.Size(93, 23);
+            btnExit.TabIndex = 11;
+            btnExit.Text = "Beenden";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
+            // 
+            // dateiToolStripMenuItem
+            // 
+            dateiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { dateiToolStripMenuItem1, dateiSpeichernToolStripMenuItem, dateiSchliesenToolStripMenuItem });
+            dateiToolStripMenuItem.Name = "dateiToolStripMenuItem";
+            dateiToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            dateiToolStripMenuItem.Text = "Datei";
+            // 
+            // dateiToolStripMenuItem1
+            // 
+            dateiToolStripMenuItem1.Name = "dateiToolStripMenuItem1";
+            dateiToolStripMenuItem1.Size = new System.Drawing.Size(156, 22);
+            dateiToolStripMenuItem1.Text = "Datei Öffnen";
+            // 
+            // dateiSpeichernToolStripMenuItem
+            // 
+            dateiSpeichernToolStripMenuItem.Name = "dateiSpeichernToolStripMenuItem";
+            dateiSpeichernToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            dateiSpeichernToolStripMenuItem.Text = "Datei Speichern";
+            // 
+            // dateiSchliesenToolStripMenuItem
+            // 
+            dateiSchliesenToolStripMenuItem.Name = "dateiSchliesenToolStripMenuItem";
+            dateiSchliesenToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            dateiSchliesenToolStripMenuItem.Text = "Datei Schliesen";
+            // 
+            // anmeldedatenToolStripMenuItem
+            // 
+            anmeldedatenToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { anmeldedatenSpeichernToolStripMenuItem, anmeldedatenLadenToolStripMenuItem, anmeldedatenLoschenToolStripMenuItem });
+            anmeldedatenToolStripMenuItem.Name = "anmeldedatenToolStripMenuItem";
+            anmeldedatenToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
+            anmeldedatenToolStripMenuItem.Text = "Anmeldedaten";
+            // 
+            // anmeldedatenSpeichernToolStripMenuItem
+            // 
+            anmeldedatenSpeichernToolStripMenuItem.Name = "anmeldedatenSpeichernToolStripMenuItem";
+            anmeldedatenSpeichernToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            anmeldedatenSpeichernToolStripMenuItem.Text = "Anmeldedaten Speichern";
+            // 
+            // anmeldedatenLadenToolStripMenuItem
+            // 
+            anmeldedatenLadenToolStripMenuItem.Name = "anmeldedatenLadenToolStripMenuItem";
+            anmeldedatenLadenToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            anmeldedatenLadenToolStripMenuItem.Text = "Anmeldedaten Laden";
+            // 
+            // anmeldedatenLoschenToolStripMenuItem
+            // 
+            anmeldedatenLoschenToolStripMenuItem.Name = "anmeldedatenLoschenToolStripMenuItem";
+            anmeldedatenLoschenToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
+            anmeldedatenLoschenToolStripMenuItem.Text = "Anmeldedaten Löschen";
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { dateiToolStripMenuItem, anmeldedatenToolStripMenuItem });
+            menuStrip1.Location = new System.Drawing.Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new System.Drawing.Size(900, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
             // 
             // MainWindow
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(900, 550);
-            Controls.Add(button5);
-            Controls.Add(button3);
-            Controls.Add(button4);
-            Controls.Add(label5);
-            Controls.Add(tabControl1);
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(900, 550);
+            Controls.Add(btnExit);
+            Controls.Add(btnDSRemove);
+            Controls.Add(btnDSSave);
+            Controls.Add(meldungen);
+            Controls.Add(TCDB);
             Controls.Add(panel1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
-            Name = "MainWindow";
             Text = "DB Uploader";
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            tabControl1.ResumeLayout(false);
+            TCDB.ResumeLayout(false);
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
 
+        private System.Windows.Forms.Button btnDSRemove;
+
+        private System.Windows.Forms.Button btnDBConnect;
+        private System.Windows.Forms.Button btnClrFields;
+
         #endregion
 
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem dateiToolStripMenuItem;
-        private ToolStripMenuItem dateiToolStripMenuItem1;
-        private ToolStripMenuItem anmeldedatenToolStripMenuItem;
-        private ToolStripMenuItem dateiSpeichernToolStripMenuItem;
-        private ToolStripMenuItem dateiSchliesenToolStripMenuItem;
-        private ToolStripMenuItem anmeldedatenSpeichernToolStripMenuItem;
-        private ToolStripMenuItem anmeldedatenLadenToolStripMenuItem;
-        private ToolStripMenuItem anmeldedatenLoschenToolStripMenuItem;
-        private Panel panel1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem dateiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dateiToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem anmeldedatenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dateiSpeichernToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dateiSchliesenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem anmeldedatenSpeichernToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem anmeldedatenLadenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem anmeldedatenLoschenToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
         private Label label1;
-        private Label label3;
+        private System.Windows.Forms.Label label3;
         private Label label2;
-        private Label label4;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private TabControl tabControl1;
-        private TabPage tabPage1;
-        private TabPage tabPage2;
-        private Label label5;
-        private Button button2;
-        private Button button1;
-        private Button button3;
-        private Button button4;
-        private Button button5;
+        private System.Windows.Forms.Label label4;
+        private TextBox TBIp;
+        private TextBox TBDBName;
+        private TextBox TBPassword;
+        private TextBox TBUsername;
+        private TabControl TCDB;
+        private TabPage TabTables;
+        private TabPage TabTableContent;
+        private TabPage TabLoadedDS;
+        private Label meldungen;
+        private System.Windows.Forms.Button btnDSSave;
+        private System.Windows.Forms.Button btnExit;
     }
 }
