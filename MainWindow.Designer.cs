@@ -182,6 +182,7 @@
             TabTables.TabIndex = 0;
             TabTables.Text = "Tabellen";
             TabTables.UseVisualStyleBackColor = true;
+            TabTables.Click += TabTables_Click;
             // 
             // TabTableContent
             // 
@@ -315,6 +316,7 @@
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
             Text = "DB Uploader";
+            Load += MainWindow_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             TCDB.ResumeLayout(false);
@@ -350,10 +352,10 @@
         private TextBox TBPassword;
         private TextBox TBUsername;
         private TabControl TCDB;
-        private TabPage TabTables;
+        private System.Windows.Forms.TabPage TabTables;
         private TabPage TabTableContent;
         private TabPage TabLoadedDS;
-        private Label meldungen;
+        public Label meldungen;
         private System.Windows.Forms.Button btnDSSave;
         private System.Windows.Forms.Button btnExit;
     }

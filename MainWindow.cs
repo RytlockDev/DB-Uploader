@@ -11,7 +11,12 @@ namespace DB_Uploader
 
         private void btnDBConnect_Click(object sender, EventArgs e)
         {
-            Tables = DBini.GetTableNames(Fields);
+            Fields[0] = TBIp.Text;
+            Fields[1] = TBUsername.Text;
+            Fields[2] = TBPassword.Text;
+            Fields[3] = TBDBName.Text;
+            Tables = DBini.GetTableNames(Fields, this);
+            LoadTables(Tables);
         }
 
         private void btnClrFields_Click(object sender, EventArgs e)
@@ -40,6 +45,11 @@ namespace DB_Uploader
             TBPassword.Text = "";
             TBIp.Text = "";
             TBDBName.Text = "";
+        }
+
+        private void LoadTables(List<string> Tables)
+        {
+            TabTables.Ite
         }
     }
 }
